@@ -1,5 +1,5 @@
 """
-HW5: Receiving Script
+Receiving Script
 Client that receives data over a simulated slow socket, and writes the results
 to STDOUT.
 """
