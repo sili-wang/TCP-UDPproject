@@ -29,7 +29,7 @@ OUTPUT = open(ARGS.file, 'wb') if ARGS.file else sys.stdout.buffer
 
 SOC = project.wire.bad_socket(ARGS.port)
 
-hw5.recv(SOC, OUTPUT)
+YourFunction.recv(SOC, OUTPUT)
 
 SOC.close()
 OUTPUT.close()
