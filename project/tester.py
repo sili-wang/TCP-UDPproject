@@ -1,5 +1,5 @@
 """
-Utility script for testing HW5 solutions under user set conditions.
+Utility script for testing ptoject solutions under user set conditions.
 """
 import time
 import argparse
@@ -11,8 +11,8 @@ import os
 import tempfile
 import signal
 import logging
-import homework6.logging
-import homework6.utils
+import project.logging
+import project.utils
 
 DESC = sys.modules[globals()['__name__']].__doc__
 PARSER = argparse.ArgumentParser(description=DESC)
@@ -41,7 +41,7 @@ PARSER.add_argument('-v', '--verbose', action="store_true",
                     help="Enable extra verbose mode.")
 ARGS = PARSER.parse_args()
 
-LOGGER = homework6.logging.get_logger("hw5-tester")
+LOGGER = project.logging.get_logger("YourFunction-tester")
 if ARGS.verbose:
     LOGGER.setLevel(logging.DEBUG)
 
