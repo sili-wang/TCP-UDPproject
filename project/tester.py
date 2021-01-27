@@ -103,7 +103,7 @@ if ARGS.verbose:
     SENDER_ARGS.append("-v")
 
 INPUT_PATH = pathlib.Path(ARGS.file)
-INPUT_LEN, INPUT_HASH = homework6.utils.file_summary(INPUT_PATH)
+INPUT_LEN, INPUT_HASH = project.utils.file_summary(INPUT_PATH)
 START_TIME = time.time()
 
 LOGGER.info("Starting sending process: {}".format(SERVER_PROCESS.pid))
@@ -119,7 +119,7 @@ SERVER_PROCESS.terminate()
 SERVER_PROCESS = None
 
 RECV_PATH = pathlib.Path(DEST_FILE_PATH)
-RECV_LEN, RECV_HASH = homework6.utils.file_summary(RECV_PATH)
+RECV_LEN, RECV_HASH = project.utils.file_summary(RECV_PATH)
 
 IS_SUCCESS = RECV_HASH == INPUT_HASH
 NUM_SECONDS = END_TIME - START_TIME
