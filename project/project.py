@@ -8,8 +8,8 @@ import io
 import time
 import typing
 import struct
-import homework6
-import homework6.logging
+import project
+import project.logging
 
 
 def send(sock: socket.socket, data: bytes):
@@ -27,10 +27,10 @@ def send(sock: socket.socket, data: bytes):
     # packets as large as the network will allow, and then send them
     # over the network, pausing half a second between sends to let the
     # network "rest" :)
-    logger = homework6.logging.get_logger("hw5-sender")
-    chunk_size = homework6.MAX_PACKET
+    logger = project.logging.get_logger("project-sender")
+    chunk_size = project.MAX_PACKET
     pause = .1
-    offsets = range(0, len(data), homework6.MAX_PACKET)
+    offsets = range(0, len(data), project.MAX_PACKET)
     for chunk in [data[i:i + chunk_size] for i in offsets]:
         sock.send(chunk)
         logger.info("Pausing for %f seconds", round(pause, 2))
@@ -49,12 +49,12 @@ def recv(sock: socket.socket, dest: io.BufferedIOBase) -> int:
     Return:
         The number of bytes written to the destination.
     """
-    logger = homework6.logging.get_logger("hw5-receiver")
+    logger = project.logging.get_logger("project-receiver")
     # Naive solution, where we continually read data off the socket
     # until we don't receive any more data, and then return.
     num_bytes = 0
     while True:
-        data = sock.recv(homework6.MAX_PACKET)
+        data = sock.recv(project.MAX_PACKET)
         if not data:
             break
         logger.info("Received %d bytes", len(data))
