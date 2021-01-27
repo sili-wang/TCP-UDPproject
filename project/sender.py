@@ -25,6 +25,6 @@ if ARGS.verbose:
 DATA = open(ARGS.file, 'rb').read()
 SOC = project.wire.bad_socket(ARGS.port)
 
-hw5.send(SOC, DATA)
+YourFunction.send(SOC, DATA)
 
 SOC.close()
