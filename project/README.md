@@ -170,16 +170,4 @@ Code that earns at least 5 of the above points, and which is both "PEP 8" and
 There are 13 points possible on this assignment.  Your solution will be graded
 out of 12 possible points.
 
-## Submission Instructions
-You will be making the submission for this homework through the OK client. When you first download 
-the homework, make sure you authenticate using `python3 ok --authenticate`. To save your work, feel free to create as many backups as you like.
 
-You will be making changes to `YourFunction.py` and that is the only file that will be submitted for grading by the ok client:
-
-To submit your work, run `python3 ok --submit`. Like previously, you are allowed to make multiple submissions. The most recent submission before the deadline will be graded.
-
-## Due Date and Logistics
-
-* This assignment is due at the at 11:59 pm on Friday, April 20, 2018.
-
-* If you have any questions please use the [Piazza](https://piazza.com/class/j9oqs0y7d01k0) discussion forum.
