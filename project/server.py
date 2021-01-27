@@ -5,8 +5,8 @@ socket connections.
 import sys
 import argparse
 import logging
-import homework6.wire
-import homework6.logging
+import project.wire
+import project.logging
 
 # Grab the dockblock of the current module, to avoid redundantly describing
 # what this program does.
@@ -27,9 +27,9 @@ PARSER.add_argument('-v', '--verbose', action="store_true",
 ARGS = PARSER.parse_args()
 
 if ARGS.verbose:
-    logging.getLogger('hw5-wire').setLevel(logging.DEBUG)
+    logging.getLogger('YourFunction-wire').setLevel(logging.DEBUG)
 
-TRANSPORT, LOOP = homework6.wire.create_server(ARGS.port, ARGS.loss,
+TRANSPORT, LOOP = project.wire.create_server(ARGS.port, ARGS.loss,
                                                ARGS.delay, ARGS.buffer)
 
 try:
