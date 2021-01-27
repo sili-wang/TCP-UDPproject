@@ -1,5 +1,5 @@
 """
-Where solution code to HW5 should be written.  No other files should
+Where solution code to project should be written.  No other files should
 be modified.
 """
 
