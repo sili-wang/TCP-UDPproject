@@ -1,5 +1,5 @@
 """
-Code for getting and configuring a logger for hw5.
+Code for getting and configuring a logger for project.
 """
 
 import logging
