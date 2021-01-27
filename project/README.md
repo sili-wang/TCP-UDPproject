@@ -1,7 +1,7 @@
 title: Homework 5
 description: Reliable Communication
-due: Friday, April 20 
-assigned: Tuesday, April 10
+due: 
+assigned: 
 additional_css: [syntax.css]
 
 ## {{ page.title }}: {{ page.description }}
@@ -11,15 +11,15 @@ additional_css: [syntax.css]
 
 ##### **This assignment is due at 11:59pm on April 20, 2018.**
 
-##### **You can download the homework zip archive [here]({{ site.url }}{{ site.baseurl }}/downloads/hw5.zip).**
+##### **You can download the homework zip archive here.**
 
 ---------
 
 
 
-## Homework 5: Reliable Communication
+## Project: Reliable Communication
 
-In this homework, you will implement reliable communication over an unreliable
+In this project, you will implement reliable communication over an unreliable
 link, just like TCP.
 
 You will be provided with code that simulates an unreliable link between sender
@@ -32,15 +32,15 @@ correctly transfers data, in a reasonable amount of time.
 ### Writing Your Solution
 
 This repo contains several tools that will help you simulate and test your
-solution.  **You should not make changes to any file other than `hw5.py`.**
+solution.  **You should not make changes to any file other than `YourFunction.py`.**
 All other files contain code used to either simulate the unreliable connection,
 or code to help you test your your solution.
 
-Your solution / `hw5.py` file will be tested against stock versions of all the
+Your solution / `YourFunction.py` file will be tested against stock versions of all the
 other files in the repo, so any changes you make will not be present at
 grading time.
 
-Your solution must be contained in the `send` and `recv` functions in `hw5.py`.
+Your solution must be contained in the `send` and `recv` functions in `YourFunction.py`.
 You should not change the signatures of these functions, only their bodies.
 These functions will be called by the grading script, with parameters
 controlled by the grading script.  Your solution must be general, and should
@@ -105,7 +105,7 @@ with a 5% loss rate, and with a latency of 100ms, you could use the following:
 
 ### Hints and Suggestions
 
- * A key part of this homework is determining how long to wait before resending
+ * A key part of this project is determining how long to wait before resending
    a packet.  You should estimate this timeout value using the EWMA technique
    for estimating the RTT, and use this in determining your timeout. With
    correctly tuned timeouts, lower RTT will result in higher throughput.
@@ -174,7 +174,7 @@ out of 12 possible points.
 You will be making the submission for this homework through the OK client. When you first download 
 the homework, make sure you authenticate using `python3 ok --authenticate`. To save your work, feel free to create as many backups as you like.
 
-You will be making changes to `hw5.py` and that is the only file that will be submitted for grading by the ok client:
+You will be making changes to `YourFunction.py` and that is the only file that will be submitted for grading by the ok client:
 
 To submit your work, run `python3 ok --submit`. Like previously, you are allowed to make multiple submissions. The most recent submission before the deadline will be graded.
 
