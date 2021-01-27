@@ -1,5 +1,5 @@
 """
-HW5: Sending Script
+Sending Script
 Client that sends STDIN, over a simulated faulty network connection.
 """
 
