@@ -1,19 +1,10 @@
-title: Homework 5
+title: Project
 description: Reliable Communication
 due: 
 assigned: 
 additional_css: [syntax.css]
 
 ## {{ page.title }}: {{ page.description }}
-
-
---------
-
-##### **This assignment is due at 11:59pm on April 20, 2018.**
-
-##### **You can download the homework zip archive here.**
-
----------
 
 
 
@@ -76,7 +67,7 @@ also reproduced below.
     usage: tester.py [-h] [-p PORT] [-l LOSS] [-d DELAY] [-b BUFFER] -f FILE
                     [-r RECEIVE] [-s] [-v]
 
-    Utility script for testing HW5 solutions under user set conditions.
+    Utility script for testing project solutions under user set conditions.
 
     optional arguments:
     -h, --help            show this help message and exit
@@ -125,7 +116,7 @@ with a 5% loss rate, and with a latency of 100ms, you could use the following:
  * Make sure you try your solution under many different loss ratios and
    latencies by changing the parameters in the `tester.py` script.
 
- * Keep your packets smaller than or equal to `homework6.MAX_PACKET` (1400
+ * Keep your packets smaller than or equal to `project.MAX_PACKET` (1400
    bytes).
 
  * Pay attention to the end of the connection. Ensure that both sides of the

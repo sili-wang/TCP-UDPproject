@@ -1,5 +1,5 @@
 """
-Shared utilities for testing implementations of HW5.
+Shared utilities for testing implementations.
 """
 import pathlib
 import typing
